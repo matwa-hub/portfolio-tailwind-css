@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Tailwind CSS</title>
+    <link rel="stylesheet" href="./dist/output.css">
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+    </style>
+</head>
+<body>
+    
+    <!-- Header Start -->
+    <header class="bg-transparent absolute top-0 left-0 w-full flex items-center z-10">
+        <div class="container">
+            <div class="flex items-center justify-between relative">
+                <div class="px-4">
+                    <a href="#home" class="font-bold text-lg text-cyan-500 block py-6">Matius Wahyu Abadi</a>
+                </div>
+                <div class="flex items-center px-4">
+                    <button id="hamburger" name="hamburger" type="button" class="block absolute right-4 lg:hidden">
+                        <span class="hamburger-line transition duration-300 ease-in-out origin-top-left"></span>
+                        <span class="hamburger-line transition duration-300 ease-in-out"></span>
+                        <span class="hamburger-line transition duration-300 ease-in-out origin-bottom-left"></span>
+                    </button>
+
+                    <nav id="nav-menu" class="hidden absolute py-5 bg-white shadow-lg 
+                    rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static 
+                    lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none">
+                        <ul class="block lg:flex">
+                            <li class="group">
+                                <a href="#home" class="text-base text-dark py-2 
+                                mx-8 flex group-hover:text-cyan-500">Beranda</a>
+                            </li>
+                            <li class="group">
+                                <a href="#about" class="text-base text-dark py-2 
+                                mx-8 flex group-hover:text-cyan-500">Tentang Saya</a>
+                            </li>
+                            <li class="group">
+                                <a href="#portfolio" class="text-base text-dark py-2 
+                                mx-8 flex group-hover:text-cyan-500">Portfolio</a>
+                            </li>
+                            <li class="group">
+                                <a href="#pengalaman" class="text-base text-dark py-2 
+                                mx-8 flex group-hover:text-cyan-500">Pengalaman</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Header End -->
+
+    <!-- Hero Section Start -->
+    <section id="home" class="pt-36">
+        <div class="container">
+            <div class="flex flex-wrap">
+                <div class="w-full self-center px-4 lg:w-1/2">
+                    <h1 class="text-base font-semibold text-cyan-500 md:text-xl">Hallo Semua 👋, 
+                        Saya <span class="block font-bold text-slate-900 text-4xl mt-1 lg:text-5xl">Matius Wahyu Abadi</span></h1>
+                    <h2 class="font-medium text-slate-500 text-lg mb-5 lg:text-2xl">Web Developer & <span class="text-slate-900">Data Analyst</span></h2>
+                    <p class="font-medium text-slate-400 mb-10 leading-relaxed">Saya adalah mahasiswa Sistem Informasi 
+                        yang antusias dalam bidang pengembangan web dan analisis data. Saya menikmati proses 
+                        membangun tampilan antarmuka yang menarik sekaligus sistem yang efisien di sisi backend. 
+                        Bagi saya, setiap proyek adalah kesempatan untuk terus belajar, berinovasi, dan menciptakan solusi digital yang bermanfaat.
+                    </p>
+                    <a href="#" class="text-base font-semibold text-white 
+                    bg-cyan-500 py-3 px-8 rounded-full 
+                    hover:shadow-lg hover:opacity-80 transition 
+                    duration-300 ease-in-out">Hubungi Saya</a>
+                </div>
+                <div class="w-full self-end px-4 lg:w-1/2">
+                    <div class="relative mt-10 lg:mt-9 lg:right-0">
+                        <img src="dist/img/Profile.png" alt="Matius Wahyu Abadi" 
+                        class="max-w-full mx-auto" />
+                        <span class="absolute -bottom-0 -z-10 left-1/2 -translate-x-1/2 md:scale-125 ">
+                            <svg width="400" height="400" viewBox="0 0 200 200" 
+                            xmlns="http://www.w3.org/2000/svg">
+                                <path fill="#06B6D4" 
+                                d="M47.7,-52.7C58.7,-36.6,62.5,
+                                -18.3,63.5,1C64.6,20.3,62.8,40.7,51.7,53.7C40.7,
+                                66.8,20.3,72.6,-0.4,73C-21.1,73.4,-42.3,68.4,-56.9,
+                                55.3C-71.5,42.3,-79.6,21.1,-78,1.6C-76.3,-17.9,-65,
+                                -35.8,-50.4,-51.9C-35.8,-68,-17.9,-82.3,0.2,-82.5C18.3,
+                                -82.7,36.6,-68.8,47.7,-52.7Z" 
+                                transform="translate(100 100) scale(1.1)" 
+                            />
+                            </svg>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Hero Section End -->
+
+    <!-- About Section Start -->
+    <section id="about" class="pt-36 pb-32">
+        <div class="container">
+            <div class="flex flex-wrap">
+                <div class="w-full px-4 mb-10 lg:w-1/2">
+                    <h4 class="font-bold uppercase text-cyan-500 text-lg mb-3">Tentang Saya</h4>
+                    <h2 class="font-bold text-dark text-3xl mb-5 max-w-md lg:text-4xl">Yuk, kenalan dengan saya!</h2>
+                    <p class="font-medium text-base text-slate-500 max-w-xl lg:text-lg">
+                        Saya percaya teknologi bukan hanya tentang kode, 
+                        tapi tentang menciptakan pengalaman digital yang bermakna bagi banyak orang.
+                    </p>
+                </div>
+                <div class="w-full px-4 lg:w-1/2">
+                    <h3 class="font-semibold text-dark text-2xl mb-4 lg:text-3xl lg:pt-10">Mari berteman</h3>
+                    <p class="font-medium text-base text-slate-500 mb-6 lg:text-lg">
+                        Saya terbuka untuk kesempatan magang, kolaborasi proyek, atau diskusi 
+                        seputar pengembangan web dan analisis data. Jangan ragu 
+                        untuk menghubungi saya melalui media sosial di bawah ini! 🚀
+                    </p>
+                    <div class="flex items-center">
+                        <!-- Instagram -->
+                        <a href="https://www.instagram.com/mat_w.a/" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 hover:border-cyan-500 hover:bg-cyan-500 hover:text-white">
+                            <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" 
+                                xmlns="http://www.w3.org/2000/svg">
+                                <title>Instagram</title>
+                                <path d="M7.0301.084c-1.2768.0602-2.1487.264-2.911.5634-.7888.3075-1.4575.72-2.1228 1.3877-.6652.6677-1.075 1.3368-1.3802 2.127-.2954.7638-.4956 1.6365-.552 2.914-.0564 1.2775-.0689 1.6882-.0626 4.947.0062 3.2586.0206 3.6671.0825 4.9473.061 1.2765.264 2.1482.5635 2.9107.308.7889.72 1.4573 1.388 2.1228.6679.6655 1.3365 1.0743 2.1285 1.38.7632.295 1.6361.4961 2.9134.552 1.2773.056 1.6884.069 4.9462.0627 3.2578-.0062 3.668-.0207 4.9478-.0814 1.28-.0607 2.147-.2652 2.9098-.5633.7889-.3086 1.4578-.72 2.1228-1.3881.665-.6682 1.0745-1.3378 1.3795-2.1284.2957-.7632.4966-1.636.552-2.9124.056-1.2809.0692-1.6898.063-4.948-.0063-3.2583-.021-3.6668-.0817-4.9465-.0607-1.2797-.264-2.1487-.5633-2.9117-.3084-.7889-.72-1.4568-1.3876-2.1228C21.2982 1.33 20.628.9208 19.8378.6165 19.074.321 18.2017.1197 16.9244.0645 15.6471.0093 15.236-.005 11.977.0014 8.718.0076 8.31.0215 7.0301.0839m.1402 21.6932c-1.17-.0509-1.8053-.2453-2.2287-.408-.5606-.216-.96-.4771-1.3819-.895-.422-.4178-.6811-.8186-.9-1.378-.1644-.4234-.3624-1.058-.4171-2.228-.0595-1.2645-.072-1.6442-.079-4.848-.007-3.2037.0053-3.583.0607-4.848.05-1.169.2456-1.805.408-2.2282.216-.5613.4762-.96.895-1.3816.4188-.4217.8184-.6814 1.3783-.9003.423-.1651 1.0575-.3614 2.227-.4171 1.2655-.06 1.6447-.072 4.848-.079 3.2033-.007 3.5835.005 4.8495.0608 1.169.0508 1.8053.2445 2.228.408.5608.216.96.4754 1.3816.895.4217.4194.6816.8176.9005 1.3787.1653.4217.3617 1.056.4169 2.2263.0602 1.2655.0739 1.645.0796 4.848.0058 3.203-.0055 3.5834-.061 4.848-.051 1.17-.245 1.8055-.408 2.2294-.216.5604-.4763.96-.8954 1.3814-.419.4215-.8181.6811-1.3783.9-.4224.1649-1.0577.3617-2.2262.4174-1.2656.0595-1.6448.072-4.8493.079-3.2045.007-3.5825-.006-4.848-.0608M16.953 5.5864A1.44 1.44 0 1 0 18.39 4.144a1.44 1.44 0 0 0-1.437 1.4424M5.8385 12.012c.0067 3.4032 2.7706 6.1557 6.173 6.1493 3.4026-.0065 6.157-2.7701 6.1506-6.1733-.0065-3.4032-2.771-6.1565-6.174-6.1498-3.403.0067-6.156 2.771-6.1496 6.1738M8 12.0077a4 4 0 1 1 4.008 3.9921A3.9996 3.9996 0 0 1 8 12.0077"/>
+                            </svg>
+                        </a>
+
+                        <!-- Facebook -->
+                        <a href="https://www.facebook.com/profile.php?id=100076321104232" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 hover:border-cyan-500 hover:bg-cyan-500 hover:text-white">
+                            <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <title>Facebook</title>
+                                <path d="M9.101 23.691v-7.98H6.627v-3.667h2.474v-1.58c0-4.085 1.848-5.978 5.858-5.978.401 0 .955.042 1.468.103a8.68 8.68 0 0 1 1.141.195v3.325a8.623 8.623 0 0 0-.653-.036 26.805 26.805 0 0 0-.733-.009c-.707 0-1.259.096-1.675.309a1.686 1.686 0 0 0-.679.622c-.258.42-.374.995-.374 1.752v1.297h3.919l-.386 2.103-.287 1.564h-3.246v8.245C19.396 23.238 24 18.179 24 12.044c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.628 3.874 10.35 9.101 11.647Z"/>
+                            </svg>
+                        </a>
+
+                        <!-- Youtube -->
+                        <a href="https://www.youtube.com/@Mat_w.a" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 hover:border-cyan-500 hover:bg-cyan-500 hover:text-white">
+                            <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <title>YouTube</title>
+                                <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                            </svg>
+                        </a>
+
+                        <!-- LinkedIn -->
+                        <a href="https://www.linkedin.com/in/matius-wahyu-abadi-4b46a5386/" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 hover:border-cyan-500 hover:bg-cyan-500 hover:text-white">
+                            <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-labelledby="linkedinTitle">
+                                <title id="linkedinTitle">LinkedIn</title>
+                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.025-3.036-1.85-3.036-1.85 0-2.133 1.445-2.133 2.939v5.666H9.357V9h3.414v1.561h.049c.476-.9 1.637-1.85 3.369-1.85 3.602 0 4.268 2.371 4.268 5.455v6.286zM5.337 7.433a2.062 2.062 0 1 1 0-4.123 2.062 2.062 0 0 1 0 4.123zM7.114 20.452H3.56V9h3.554v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.727v20.545C0 23.226.792 24 1.771 24h20.451C23.2 24 24 23.226 24 22.273V1.727C24 .774 23.2 0 22.225 0z"/>
+                            </svg>
+                        </a>
+
+                        <!-- GitHub -->
+                        <a href="https://github.com/matwa-hub" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 hover:border-cyan-500 hover:bg-cyan-500 hover:text-white">
+                            <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" 
+                                xmlns="http://www.w3.org/2000/svg">
+                                <title>GitHub</title>
+                                <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
+                            </svg>
+                        </a> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- About Section End -->
+
+    <!-- Portfolio Section Start -->
+    <section id="portfolio" class="pt-36 pb-16 bg-slate-200">
+    <div class="container">
+        <!-- Judul Section -->
+        <div class="w-full px-4">
+        <div class="max-w-xl mx-auto text-center mb-16">
+            <h4 class="font-semibold text-lg text-cyan-500 mb-2">Portfolio</h4>
+            <h2 class="font-bold text-dark text-3xl mb-4 sm:text-4xl lg:text-5xl">Project Saya</h2>
+            <p class="font-medium text-md text-slate-500 md:text-lg">
+                Kumpulan proyek yang telah saya kerjakan, mulai dari pengembangan
+                website hingga analisis data. Setiap proyek mencerminkan
+                proses belajar dan penerapan keterampilan saya di dunia teknologi.
+            </p>
+        </div>
+        </div>
+
+        <!-- Grid Projects -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 px-6 xl:w-10/12 xl:mx-auto">
+
+            <!-- Project 1 -->
+            <a href="https://github.com/matwa-hub/project-uts-webdev" target="_blank"
+                class="block rounded-md shadow-md overflow-hidden hover:scale-105 transition-transform duration-300 p-4 bg-white">
+                <img src="dist/img/portfolio/uts-web.jpg" alt="uts-web" class="w-full rounded-md">
+                <h3 class="font-semibold text-xl text-dark mt-5 mb-3">Xplore – Website Eksplorasi Wisata</h3>
+                <p class="font-medium text-base text-slate-500">
+                    Xplore adalah website layanan wisata alam yang dibangun menggunakan HTML, JavaScript,
+                    dan Bootstrap. Website ini menyediakan informasi serta layanan pendampingan bagi
+                    pengunjung yang ingin menikmati pengalaman wisata alam secara aman, seru, dan terorganisir.
+                </p>
+            </a>
+
+            <!-- Project 2 -->
+            <a href="https://github.com/matwa-hub/uas-webdev-travel" target="_blank"
+                class="block rounded-md shadow-md overflow-hidden hover:scale-105 transition-transform duration-300 p-4 bg-white">
+                <img src="dist/img/portfolio/uas-web.jpg" alt="uas-web" class="w-full rounded-md">
+                <h3 class="font-semibold text-xl text-dark mt-5 mb-3">Jadoo – Website Layanan Wisata dan Pemesanan Perjalanan</h3>
+                <p class="font-medium text-base text-slate-500">
+                    Jadoo adalah website pemesanan wisata berbasis HTML, CSS, PHP, dan MySQL.
+                    Dirancang responsif dengan fitur informasi destinasi dan sistem booking
+                    perjalanan yang terhubung ke database.
+                </p>
+            </a>
+
+            <!-- Project 3 -->
+            <a href="https://github.com/matwa-hub/rental-buku-cpp" target="_blank"
+                class="block rounded-md shadow-md overflow-hidden hover:scale-105 transition-transform duration-300 p-4 bg-white">
+                <img src="dist/img/portfolio/uas-cpp.jpg" alt="uas-cpp" class="w-full rounded-md">
+                <h3 class="font-semibold text-xl text-dark mt-5 mb-3">Rental Buku – Program Manajemen Penyewaan Buku (C++)</h3>
+                <p class="font-medium text-base text-slate-500">
+                    Program manajemen penyewaan buku berbasis C++ dengan fitur peminjaman,
+                    pengembalian, perhitungan biaya, dan penyimpanan data menggunakan file
+                    handling serta struktur data Linked List dan Stack.
+                </p>
+            </a>
+
+            <!-- Project 4 -->
+            <a href="https://github.com/matwa-hub/big-data-crypto-clustering" target="_blank"
+                class="block rounded-md shadow-md overflow-hidden hover:scale-105 transition-transform duration-300 p-4 bg-white">
+                <img src="dist/img/portfolio/uas-big-data.jpg" alt="uas-big-data" class="w-full rounded-md">
+                <h3 class="font-semibold text-xl text-dark mt-5 mb-3">Analisis Data Harga Kripto Menggunakan Python dan Excel</h3>
+                <p class="font-medium text-base text-slate-500">
+                    Analisis perbandingan harga aset kripto menggunakan Excel dan Python di Google Colab.
+                    Proyek ini memanfaatkan Pandas dan Matplotlib untuk pengolahan serta visualisasi data harga kripto secara terstruktur.
+                </p>
+            </a>
+
+            <!-- Project 5 -->
+            <a href="https://github.com/matwa-hub/uas-oop-library-system" target="_blank"
+                class="block rounded-md shadow-md overflow-hidden hover:scale-105 transition-transform duration-300 p-4 bg-white">
+                <img src="dist/img/portfolio/uas-obp.jpg" alt="uas-obp" class="w-full rounded-md">
+                <h3 class="font-semibold text-xl text-dark mt-5 mb-3">Sistem Manajemen Perpustakaan (Java)</h3>
+                <p class="font-medium text-base text-slate-500">
+                    Program manajemen perpustakaan berbasis Java yang mengimplementasikan konsep
+                    Object Based Programming seperti inheritance, encapsulation, dan polymorphism
+                    untuk mengelola data buku, anggota, serta transaksi peminjaman.
+                </p>
+            </a>
+
+            <!-- Project 6 -->
+            <a href="#home"
+                class="block rounded-md shadow-md overflow-hidden hover:scale-105 transition-transform duration-300 p-4 bg-white">
+                <img src="dist/img/portfolio/web-portfolio.jpg" alt="web-portfolio" class="w-full rounded-md">
+                <h3 class="font-semibold text-xl text-dark mt-5 mb-3">Website Portfolio</h3>
+                <p class="font-medium text-base text-slate-500">
+                    Anda sekarang berada di website portofolio pribadi ini
+                    yang dibangun menggunakan HTML, Tailwind CSS, dan JavaScript.
+                    Melalui website ini, Anda dapat menjelajahi proyek, pengalaman,
+                    serta keahlian saya di bidang pengembangan web dan analisis data.
+                </p>
+            </a>
+        </div>
+    </div>
+    </section>
+    <!-- Portfolio Section End -->
+
+    <!-- Pengalaman Section Start -->
+    <section id="pengalaman" class="pt-36 pb-32">
+        <div class="container">
+            <div class="w-full px-4">
+                <div class="max-w-xl mx-auto text-center mb-16">
+                    <h4 class="font-semibold text-lg text-cyan-500 mb-2">Pengalaman</h4>
+                    <h2 class="font-bold text-dark text-3xl mb-4">Pengalaman Saya</h2>
+                    <p class="font-medium text-md text-slate-500">
+                        Beberapa pengalaman organisasi yang telah saya jalani, mulai dari 
+                        kepanitiaan hingga kepengurusan inti. Melalui setiap peran, saya belajar 
+                        mengatur waktu, berkolaborasi, dan memimpin tim untuk mencapai tujuan bersama.
+                    </p>
+                </div>
+            </div>
+            <div class="flex flex-wrap">
+                <div class="w-full px-4 lg:w-1/2 xl:w-1/3">
+                    <div class="bg-slate-200 rounded-xl shadow-lg overflow-hidden mb-10">
+                        <img src="/dist/img/pengalaman/foto-baksos.jpg" alt="foto-baksos" class="w-full">
+                        <div class="py-8 px-6">
+                            <h3>
+                               <a href="https://www.instagram.com/reel/C88lptWSsLu/?utm_source=ig_web_copy_link&igsh=MTA1eDEwcm1zNW1pYQ==" 
+                               class="block mb-3 font-semibold text-xl text-black hover:text-cyan-500 truncate">
+                                    Bakti Sosial
+                                </a> 
+                            </h3>
+                            <p class="font-medium text-base mb-6">
+                                Berperan sebagai Sekretaris Pelaksana dalam kegiatan 
+                                Bakti Sosial, mengatur administrasi dan koordinasi 
+                                panitia untuk mendukung kelancaran acara.
+                            </p>
+                            <a href="https://www.instagram.com/reel/C88lptWSsLu/?utm_source=ig_web_copy_link&igsh=MTA1eDEwcm1zNW1pYQ==" 
+                            class="font-medium text-sm text-white bg-cyan-500 py-3 px-4 rounded-lg hover:opacity-80">
+                                Lihat Selengkapnya
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full px-4 lg:w-1/2 xl:w-1/3">
+                    <div class="bg-slate-200 rounded-xl shadow-lg overflow-hidden mb-10">
+                        <img src="/dist/img/pengalaman/foto-pl.JPG" alt="foto-pl" class="w-full">
+                        <div class="py-8 px-6">
+                            <h3>
+                               <a href="https://www.instagram.com/reel/DFaEa--Smtd/?utm_source=ig_web_copy_link&igsh=cmYxbGY5d2UwOGhw" 
+                               class="block mb-3 font-semibold text-xl text-black hover:text-cyan-500 truncate">
+                                    Pelestarian Alam
+                                </a> 
+                            </h3>
+                            <p class="font-medium text-base mb-6">
+                                Sebagai Sekretaris Program Pelestarian Alam, saya 
+                                bertanggung jawab dalam pengelolaan administrasi dan 
+                                dokumentasi kegiatan konservasi lingkungan.
+                            </p>
+                            <a href="https://www.instagram.com/reel/DFaEa--Smtd/?utm_source=ig_web_copy_link&igsh=cmYxbGY5d2UwOGhw" 
+                            class="font-medium text-sm text-white bg-cyan-500 py-3 px-4 rounded-lg hover:opacity-80">
+                                Lihat Selengkapnya
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full px-4 lg:w-1/2 xl:w-1/3">
+                    <div class="bg-slate-200 rounded-xl shadow-lg overflow-hidden mb-10">
+                        <img src="/dist/img/pengalaman/foto-rafting.JPG" alt="foto-rafting" class="w-full">
+                        <div class="py-8 px-6">
+                            <h3>
+                               <a href="https://www.instagram.com/reel/C7l7ZBTSnNw/?utm_source=ig_web_copy_link&igsh=MWNueGhnMmx3d25mNQ==" 
+                               class="block mb-3 font-semibold text-xl text-black hover:text-cyan-500 truncate">
+                                    Rafting
+                                </a> 
+                            </h3>
+                            <p class="font-medium text-base mb-6">
+                                Sebagai Anggota Divisi Akomodasi dan Konsumsi pada kegiatan 
+                                Rafting, saya membantu mengatur logistik serta memastikan 
+                                kebutuhan peserta terpenuhi selama kegiatan berlangsung.
+                            </p>
+                            <a href="https://www.instagram.com/reel/C7l7ZBTSnNw/?utm_source=ig_web_copy_link&igsh=MWNueGhnMmx3d25mNQ==" 
+                            class="font-medium text-sm text-white bg-cyan-500 py-3 px-4 rounded-lg hover:opacity-80">
+                                Lihat Selengkapnya
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full px-4 lg:w-1/2 xl:w-1/3">
+                    <div class="bg-slate-200 rounded-xl shadow-lg overflow-hidden mb-10">
+                        <img src="/dist/img/pengalaman/foto-rarim.jpg" alt="foto-rarim" class="w-full">
+                        <div class="py-8 px-6">
+                            <h3>
+                               <a href="https://www.instagram.com/reel/DNxfAdmUuuM/?utm_source=ig_web_copy_link&igsh=NnVnNmZ3cnlyZnN3" 
+                               class="block mb-3 font-semibold text-xl text-black hover:text-cyan-500 truncate">
+                                    Rapat Rimba
+                                </a> 
+                            </h3>
+                            <p class="font-medium text-base mb-6">
+                                Sebagai Ketua Pelaksana Rapat Rimba, saya memimpin perencanaan dan 
+                                pelaksanaan kegiatan, serta mengoordinasikan seluruh panitia untuk 
+                                memastikan acara berjalan lancar.
+                            </p>
+                            <a href="https://www.instagram.com/reel/DNxfAdmUuuM/?utm_source=ig_web_copy_link&igsh=NnVnNmZ3cnlyZnN3" 
+                            class="font-medium text-sm text-white bg-cyan-500 py-3 px-4 rounded-lg hover:opacity-80">
+                                Lihat Selengkapnya
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full px-4 lg:w-1/2 xl:w-1/3">
+                    <div class="bg-slate-200 rounded-xl shadow-lg overflow-hidden mb-10">
+                        <img src="/dist/img/pengalaman/foto-sc.jpg" alt="foto-sc" class="w-full">
+                        <div class="py-8 px-6">
+                            <h3>
+                               <a href="https://www.instagram.com/reel/DGj-DmTSUkh/?utm_source=ig_web_copy_link&igsh=MTFvbm15a2xkMjhtNw==" 
+                               class="block mb-3 font-semibold text-xl text-black hover:text-cyan-500 truncate">
+                                    Smartcamp
+                                </a> 
+                            </h3>
+                            <p class="font-medium text-base mb-6">
+                                Sebagai Koordinator Divisi Acara Smartcamp, 
+                                saya bertanggung jawab dalam perencanaan jadwal, 
+                                koordinasi kegiatan, serta memastikan seluruh 
+                                rangkaian acara berjalan sesuai rencana.
+                            </p>
+                            <a href="https://www.instagram.com/reel/DGj-DmTSUkh/?utm_source=ig_web_copy_link&igsh=MTFvbm15a2xkMjhtNw==" 
+                            class="font-medium text-sm text-white bg-cyan-500 py-3 px-4 rounded-lg hover:opacity-80">
+                                Lihat Selengkapnya
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full px-4 lg:w-1/2 xl:w-1/3">
+                    <div class="bg-slate-200 rounded-xl shadow-lg overflow-hidden mb-10">
+                        <img src="/dist/img/pengalaman/foto-logistik.jpg" alt="foto-logistik" class= "w-full">
+                        <div class="py-8 px-6">
+                            <h3>
+                               <a href="https://www.instagram.com/mapalaftiuntar/" 
+                               class="block mb-3 font-semibold text-xl text-black hover:text-cyan-500 truncate">
+                                    Koordinator Divisi Logistik
+                                </a> 
+                            </h3>
+                            <p class="font-medium text-base mb-6">
+                                Sebagai Koordinator Divisi Logistik, saya bertanggung 
+                                jawab atas pengelolaan dan pemeliharaan peralatan, serta 
+                                memastikan ketersediaan perlengkapan selama kegiatan berlangsung.
+                            </p>
+                            <a href="https://www.instagram.com/mapalaftiuntar/" 
+                            class="font-medium text-sm text-white bg-cyan-500 py-3 px-4 rounded-lg hover:opacity-80">
+                                Lihat Selengkapnya
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Pengalaman Section End -->
+
+    <!-- Footer Start -->
+    <footer class="bg-slate-900 pt-24 pb-12">
+        <div class="container">
+            <div class="flex flex-wrap">
+                <div class="w-full px-4 mb-12 text-slate-300 font-medium md:w-1/3">
+                    <h2 class="font-bold text-2xl text-white mb-5">Matius Wahyu Abadi</h2>
+                    <h3 class="font-bold mb-2">Web Developer & Data Analyst</h3>
+                    <p>matiusabadi781@gmail.com</p>
+                    <p>Jakarta, Indonesia</p>
+                </div>
+                <div class="w-full px-4 mb-12 md:w-1/3">
+                    <h3 class="font-semibold text-xl text-white mb-5">Keahlian Utama</h3>
+                    <ul class="text-slate-300">
+                        <li>
+                            <a href="#" class="inline-block text-base hover:text-cyan-500 mb-3">
+                                Web Development
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="inline-block text-base hover:text-cyan-500 mb-3">
+                                UI/UX Design
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="inline-block text-base hover:text-cyan-500 mb-3">
+                                Data Analyst
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#pengalaman" class="inline-block text-base hover:text-cyan-500 mb-3">
+                                Database Management
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="w-full px-4 mb-12 md:w-1/3">
+                    <h3 class="font-semibold text-xl text-white mb-5">Tautan</h3>
+                    <ul class="text-slate-300">
+                        <li>
+                            <a href="#home" class="inline-block text-base hover:text-cyan-500 mb-3">
+                                Beranda
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#about" class="inline-block text-base hover:text-cyan-500 mb-3">
+                                Tentang Saya
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#portfolio" class="inline-block text-base hover:text-cyan-500 mb-3">
+                                Portfolio
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#pengalaman" class="inline-block text-base hover:text-cyan-500 mb-3">
+                                Pengalaman
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="w-full pt-10 border-t border-slate-700">
+                <div class="flex items-center justify-center mb-5">
+                        <!-- Instagram -->
+                        <a href="https://www.instagram.com/mat_w.a/" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 hover:border-cyan-500 hover:bg-cyan-500 hover:text-white text-white">
+                            <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" 
+                                xmlns="http://www.w3.org/2000/svg">
+                                <title>Instagram</title>
+                                <path d="M7.0301.084c-1.2768.0602-2.1487.264-2.911.5634-.7888.3075-1.4575.72-2.1228 1.3877-.6652.6677-1.075 1.3368-1.3802 2.127-.2954.7638-.4956 1.6365-.552 2.914-.0564 1.2775-.0689 1.6882-.0626 4.947.0062 3.2586.0206 3.6671.0825 4.9473.061 1.2765.264 2.1482.5635 2.9107.308.7889.72 1.4573 1.388 2.1228.6679.6655 1.3365 1.0743 2.1285 1.38.7632.295 1.6361.4961 2.9134.552 1.2773.056 1.6884.069 4.9462.0627 3.2578-.0062 3.668-.0207 4.9478-.0814 1.28-.0607 2.147-.2652 2.9098-.5633.7889-.3086 1.4578-.72 2.1228-1.3881.665-.6682 1.0745-1.3378 1.3795-2.1284.2957-.7632.4966-1.636.552-2.9124.056-1.2809.0692-1.6898.063-4.948-.0063-3.2583-.021-3.6668-.0817-4.9465-.0607-1.2797-.264-2.1487-.5633-2.9117-.3084-.7889-.72-1.4568-1.3876-2.1228C21.2982 1.33 20.628.9208 19.8378.6165 19.074.321 18.2017.1197 16.9244.0645 15.6471.0093 15.236-.005 11.977.0014 8.718.0076 8.31.0215 7.0301.0839m.1402 21.6932c-1.17-.0509-1.8053-.2453-2.2287-.408-.5606-.216-.96-.4771-1.3819-.895-.422-.4178-.6811-.8186-.9-1.378-.1644-.4234-.3624-1.058-.4171-2.228-.0595-1.2645-.072-1.6442-.079-4.848-.007-3.2037.0053-3.583.0607-4.848.05-1.169.2456-1.805.408-2.2282.216-.5613.4762-.96.895-1.3816.4188-.4217.8184-.6814 1.3783-.9003.423-.1651 1.0575-.3614 2.227-.4171 1.2655-.06 1.6447-.072 4.848-.079 3.2033-.007 3.5835.005 4.8495.0608 1.169.0508 1.8053.2445 2.228.408.5608.216.96.4754 1.3816.895.4217.4194.6816.8176.9005 1.3787.1653.4217.3617 1.056.4169 2.2263.0602 1.2655.0739 1.645.0796 4.848.0058 3.203-.0055 3.5834-.061 4.848-.051 1.17-.245 1.8055-.408 2.2294-.216.5604-.4763.96-.8954 1.3814-.419.4215-.8181.6811-1.3783.9-.4224.1649-1.0577.3617-2.2262.4174-1.2656.0595-1.6448.072-4.8493.079-3.2045.007-3.5825-.006-4.848-.0608M16.953 5.5864A1.44 1.44 0 1 0 18.39 4.144a1.44 1.44 0 0 0-1.437 1.4424M5.8385 12.012c.0067 3.4032 2.7706 6.1557 6.173 6.1493 3.4026-.0065 6.157-2.7701 6.1506-6.1733-.0065-3.4032-2.771-6.1565-6.174-6.1498-3.403.0067-6.156 2.771-6.1496 6.1738M8 12.0077a4 4 0 1 1 4.008 3.9921A3.9996 3.9996 0 0 1 8 12.0077"/>
+                            </svg>
+                        </a>
+
+                        <!-- Facebook -->
+                        <a href="https://www.facebook.com/profile.php?id=100076321104232" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 hover:border-cyan-500 hover:bg-cyan-500 hover:text-white text-white">
+                            <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <title>Facebook</title>
+                                <path d="M9.101 23.691v-7.98H6.627v-3.667h2.474v-1.58c0-4.085 1.848-5.978 5.858-5.978.401 0 .955.042 1.468.103a8.68 8.68 0 0 1 1.141.195v3.325a8.623 8.623 0 0 0-.653-.036 26.805 26.805 0 0 0-.733-.009c-.707 0-1.259.096-1.675.309a1.686 1.686 0 0 0-.679.622c-.258.42-.374.995-.374 1.752v1.297h3.919l-.386 2.103-.287 1.564h-3.246v8.245C19.396 23.238 24 18.179 24 12.044c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.628 3.874 10.35 9.101 11.647Z"/>
+                            </svg>
+                        </a>
+
+                        <!-- Youtube -->
+                        <a href="https://www.youtube.com/@Mat_w.a" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 hover:border-cyan-500 hover:bg-cyan-500 hover:text-white text-white">
+                            <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <title>YouTube</title>
+                                <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                            </svg>
+                        </a>
+
+                        <!-- LinkedIn -->
+                        <a href="https://www.linkedin.com/in/matius-wahyu-abadi-4b46a5386/" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 hover:border-cyan-500 hover:bg-cyan-500 hover:text-white text-white">
+                            <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-labelledby="linkedinTitle">
+                                <title id="linkedinTitle">LinkedIn</title>
+                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.025-3.036-1.85-3.036-1.85 0-2.133 1.445-2.133 2.939v5.666H9.357V9h3.414v1.561h.049c.476-.9 1.637-1.85 3.369-1.85 3.602 0 4.268 2.371 4.268 5.455v6.286zM5.337 7.433a2.062 2.062 0 1 1 0-4.123 2.062 2.062 0 0 1 0 4.123zM7.114 20.452H3.56V9h3.554v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.727v20.545C0 23.226.792 24 1.771 24h20.451C23.2 24 24 23.226 24 22.273V1.727C24 .774 23.2 0 22.225 0z"/>
+                            </svg>
+                        </a>
+
+                        <!-- GitHub -->
+                        <a href="https://github.com/matwa-hub" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 hover:border-cyan-500 hover:bg-cyan-500 hover:text-white text-white">
+                            <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" 
+                                xmlns="http://www.w3.org/2000/svg">
+                                <title>GitHub</title>
+                                <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
+                            </svg>
+                        </a> 
+                </div>
+                <p class="font-medium text-xs text-slate-500 text-center">Dibuat Dengan <span class="text-pink-500">❤️</span> Oleh <a href="https://instagram.com/mat_w.a" target="_blank" class=" font-bold 
+                    text-cyan-500">Matius Wahyu Abadi</a>, 
+                    Menggunakan <a href="https://tailwindcss.com/" target="_blank" class="font-bold text-sky-500">Tailwind CSS</a>.
+                </p>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer End -->
+
+
+ <script src="dist/js/script.js"></script>
+
+</body>
+</html>
