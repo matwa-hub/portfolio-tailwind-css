@@ -4,13 +4,14 @@ export default {
     "./index.html",
     "./src/**/*.{html,js}"
   ],
+  darkMode: 'class',
   theme: {
     container: {
         center: true,
         padding: '16px',
     },
     extend: {
-        screen: {
+        screens: {
             '2xl': '1320px',
         },
     },
