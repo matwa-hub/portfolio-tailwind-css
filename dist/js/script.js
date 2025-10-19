@@ -52,3 +52,47 @@ darkToggle.addEventListener('click', function() {
     } else {
         darkToggle.checked = false;
    }
+   
+
+// === Formspree + Popup Notifikasi ===
+document.addEventListener("DOMContentLoaded", () => {
+  const form = document.querySelector('form[action="https://formspree.io/f/mpwyndbk"]');
+  const modal = document.getElementById("successModal");
+  const closeModal = document.getElementById("closeModal");
+
+  if (form) {
+    form.addEventListener("submit", async (e) => {
+      e.preventDefault();
+
+      const button = form.querySelector("button[type='submit']");
+      const originalText = button.innerHTML;
+
+      // tampilkan loading
+      button.innerHTML = "Mengirim...";
+      button.disabled = true;
+
+      const response = await fetch(form.action, {
+        method: form.method,
+        body: new FormData(form),
+        headers: { "Accept": "application/json" },
+      });
+
+      if (response.ok) {
+        modal.classList.remove("hidden");
+        form.reset();
+      } else {
+        alert("Terjadi kesalahan, coba lagi nanti ❌");
+      }
+
+      // kembalikan tombol ke keadaan semula
+      button.innerHTML = originalText;
+      button.disabled = false;
+    });
+  }
+
+  if (closeModal) {
+    closeModal.addEventListener("click", () => {
+      modal.classList.add("hidden");
+    });
+  }
+});
